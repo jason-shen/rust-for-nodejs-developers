@@ -14,3 +14,41 @@
 
 This guide full of examples is intended for people learning Rust that are coming from Node.js, although the vice versa can work too. This is not meant to be a complete guide and it is assumed that you've gone through the [Getting Started of Rust](https://www.rust-lang.org/learn/get-started) tutorial. This guide is meant to be barely good enough to help you at a high level understand how to do *X* in *Y* and doing further learning on your own is of course required.
 
+## Contents
+
+- [Examples](#examples)
+  - [comments](#comments)
+  
+
+## Examples
+
+All sample code is available in [examples/](examples/)
+
+### comments
+---
+
+#### Node.js
+
+```node
+// this is a line comment
+
+/*
+ this is a block comment
+*/
+```
+
+#### Rust
+
+```rust
+package main
+
+fn main() {
+	// this is a line comment
+
+	/*
+	   this is a block comment
+	*/
+}
+```
+
+**[⬆ back to top](#contents)**
