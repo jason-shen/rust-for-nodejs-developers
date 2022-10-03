@@ -19,7 +19,9 @@ This guide full of examples is intended for people learning Rust that are coming
 - [Examples](#examples)
   - [comments](#comments)
   - [printing](#printing)
-  
+  - [logging](#logging)
+  - [variables](#variables)
+
 
 ## Examples
 
@@ -158,22 +160,17 @@ let bar = 'bar'
 const qux = 'qux'
 ```
 
-#### Go
+#### Rust
 
-(variables are block scoped in Go)
+(variables are block scoped in Rust)
 
-```go
-package main
-
-func main() {
+```rust
+fn main() {
 	// explicit
-	var foo string = "foo"
+	let foo:string = "foo"
 
 	// type inferred
-	var bar = "foo"
-
-	// shorthand
-	baz := "bar"
+	let bar = "foo"
 
 	// constant
 	const qux = "qux"
