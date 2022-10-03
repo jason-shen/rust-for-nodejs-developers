@@ -52,3 +52,43 @@ fn main() {
 ```
 
 **[⬆ back to top](#contents)**
+
+### printing
+---
+
+#### Node.js
+
+```node
+console.log('print to stdout')
+console.log('format %s %d', 'example', 1)
+console.error('print to stderr')
+```
+
+Output
+
+```bash
+print to stdout
+format example 1
+print to stderr
+```
+
+#### Go
+
+```rust
+
+fn main() {
+	println!("print to stdout")
+	println!("format %s %v\n", "example", 1)
+	eprintln!f("print to stderr")
+}
+```
+
+Output
+
+```bash
+print to stdout
+format example 1
+print to stderr
+```
+
+**[⬆ back to top](#contents)**
