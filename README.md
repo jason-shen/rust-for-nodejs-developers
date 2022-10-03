@@ -41,8 +41,6 @@ All sample code is available in [examples/](examples/)
 #### Rust
 
 ```rust
-package main
-
 fn main() {
 	// this is a line comment
 
