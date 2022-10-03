@@ -91,3 +91,93 @@ print to stderr
 ```
 
 **[⬆ back to top](#contents)**
+
+### logging
+---
+
+#### Node.js
+
+```node
+console.log((new Date()).toISOString(), 'hello world')
+```
+
+Output
+
+```bash
+2021-04-11T20:55:07.451Z hello world
+```
+
+#### Rust
+you will need couple of crates from crates.io for this example
+```rust 
+log = "0.4.0"
+env_logger = "0.9.0"
+```
+```rust
+
+use log::debug;
+use log::error;
+use log::info;
+use log::warn;
+fn main() {
+    std::env::set_var("RUST_LOG", "debug");
+    env_logger::init();
+    debug!("hello world!");
+    error!("{}", "hello world!");
+    info!("{:?}", "hello world!");
+    warn!("{:#?}", "hello world!");
+}
+```
+
+Output
+
+```bash
+[2022-10-03T08:06:04Z DEBUG logging] hello world!
+[2022-10-03T08:06:04Z ERROR logging] hello world!
+[2022-10-03T08:06:04Z INFO  logging] "hello world!"
+[2022-10-03T08:06:04Z WARN  logging] "hello world!"
+```
+
+_(Package `log` writes to standard error ánd prints the date and time of each logged message)_
+
+**[⬆ back to top](#contents)**
+
+### variables
+---
+
+#### Node.js
+
+```node
+// function scoped
+var foo = 'foo'
+
+// block scoped
+let bar = 'bar'
+
+// constant
+const qux = 'qux'
+```
+
+#### Go
+
+(variables are block scoped in Go)
+
+```go
+package main
+
+func main() {
+	// explicit
+	var foo string = "foo"
+
+	// type inferred
+	var bar = "foo"
+
+	// shorthand
+	baz := "bar"
+
+	// constant
+	const qux = "qux"
+}
+```
+
+**[⬆ back to top](#contents)**
