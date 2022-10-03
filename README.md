@@ -18,6 +18,7 @@ This guide full of examples is intended for people learning Rust that are coming
 
 - [Examples](#examples)
   - [comments](#comments)
+  - [printing](#printing)
   
 
 ## Examples
