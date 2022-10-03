@@ -11,3 +11,7 @@ edition = "2021"
 [[example]]
 name = "comments"
 path = "examples/comments.rs"
+
+[[example]]
+name = "print"
+path = "examples/print.rs"
