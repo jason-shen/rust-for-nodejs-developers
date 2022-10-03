@@ -140,8 +140,6 @@ Output
 [2022-10-03T08:06:04Z WARN  logging] "hello world!"
 ```
 
-_(Package `log` writes to standard error ánd prints the date and time of each logged message)_
-
 **[⬆ back to top](#contents)**
 
 ### variables
@@ -167,13 +165,15 @@ const qux = 'qux'
 ```rust
 fn main() {
 	// explicit
-	let foo:string = "foo"
+	let foo:&str = "foo";
 
 	// type inferred
-	let bar = "foo"
+	let bar = "foo";
 
 	// constant
-	const qux = "qux"
+	const QUX:&str = "Qux";
+
+    println!("{} {} {}", foo, bar, QUX);
 }
 ```
 

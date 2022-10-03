@@ -20,3 +20,7 @@ path = "examples/print.rs"
 [[example]]
 name = "logging"
 path = "examples/logging.rs"
+
+[[example]]
+name = "variables"
+path = "examples/variables.rs"
