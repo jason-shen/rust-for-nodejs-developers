@@ -72,7 +72,7 @@ format example 1
 print to stderr
 ```
 
-#### Go
+#### Rust
 
 ```rust
 
